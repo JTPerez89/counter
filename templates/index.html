@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <p>{{ session['count'] }}</p>
+    <p>{{ session['visit'] }}</p>
+    <a href="/counter">Add 2</a>
+    <a href="/destroy">Clear</a>
+    <form action="/client" method="post">
+        <label for="increment">Add to counter by:</label>
+        <input type="number" name="increment">
+        <input type="submit">
+    </form>
+</body>
+</html>
